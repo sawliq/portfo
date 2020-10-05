@@ -1,0 +1,5 @@
+ email=data['email']
+        subject=data['subject']
+        message=data['message']
+        csvfile=csv.writer(database2,delimiter=',', quotechar='|',quoting=csv.QUOTE_MINIMAL)
+        csvfile.writerow([email,subject,message])
